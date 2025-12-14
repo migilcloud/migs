@@ -166,12 +166,17 @@ function initTiltEffects() {
 
 /* SMOOTH SCROLL FOR HEX MENU */
 function initSmoothScroll() {
-  const links = document.querySelectorAll(".hex-btn");
+  const links = document.querySelectorAll(".hex-nav .hex-btn");
+  if (!links.length) return;
 
   links.forEach(link => {
     link.addEventListener("click", e => {
+      const targetId = link.getAttribute("href");
+
+      if (!targetId.startsWith("#")) return;
+
       e.preventDefault();
-      const target = document.querySelector(link.getAttribute("href"));
+      const target = document.querySelector(targetId);
       if (target) {
         window.scrollTo({
           top: target.offsetTop - 40,
