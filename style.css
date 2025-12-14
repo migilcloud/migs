@@ -261,6 +261,21 @@ h1, h2, h3, p {
   text-shadow: 0 0 10px #fff;
 }
 
+.social-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow: 0 0 10px #bb00ff;
+  transition: 0.3s ease;
+}
+
+.social-link:hover {
+  color: #eab0ff;
+  text-shadow: 
+    0 0 15px #bb00ff,
+    0 0 30px #7a00d6;
+}
+
 
 /* FOOTER */
 .footer {
@@ -294,4 +309,110 @@ h1, h2, h3, p {
 
 .tilt:hover {
   transform: rotateY(12deg) rotateX(12deg);
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-desc {
+  margin-top: 15px;
+  line-height: 1.7;
+  color: #eab0ff;
+  text-shadow: 0 0 10px #bb00ff;
+}
+
+/* SUB TITLES */
+.sub-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #f3d0ff;
+  text-shadow: 0 0 12px #bb00ff;
+}
+
+/* IMAGE GALLERY */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 700px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #bb00ff;
+  box-shadow: 0 0 25px #bb00ff;
+  transition: 0.3s ease;
+
+}
+
+.project-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #bb00ff, 0 0 60px #7a00d6;
+}
+
+/* ACTION BUTTONS */
+.project-actions {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* MAIN POSTER */
+.project-poster {
+  position: sticky;
+  top: 120px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 2px solid #bb00ff;
+  box-shadow: 0 0 35px #bb00ff, 0 0 70px #7a00d6;
+  background: rgba(20, 0, 40, 0.6);
+  margin-left: -180px;
+}
+
+.project-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* CONTENT AREA */
+.project-content {
+  max-width: 720px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-poster {
+    position: relative;
+    max-width: 420px;
+    margin: 0 auto 50px;
+  }
 }
