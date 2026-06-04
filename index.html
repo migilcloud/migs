@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Miguel Rosales, a web and mobile app developer focused on practical digital solutions.">
+  <title>Miguel Rosales | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="index.html" class="brand" aria-label="Miguel Rosales home">
+        <span class="brand-mark">MR</span>
+        <span>Miguel Rosales</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" data-nav-links>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Web Developer / Mobile App Developer</p>
+        <h1>Building useful digital products with clean interfaces and reliable data.</h1>
+        <p class="hero-text">
+          I create responsive websites, mobile applications, and IoT-connected tools that turn real-world problems into practical software experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="button button-primary">View Work</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Portfolio highlights">
+          <div>
+            <strong>Web</strong>
+            <span>Frontend builds</span>
+          </div>
+          <div>
+            <strong>Mobile</strong>
+            <span>React Native apps</span>
+          </div>
+          <div>
+            <strong>IoT</strong>
+            <span>Sensor monitoring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="profile-panel">
+          <img src="images/profile.jpg" alt="Miguel Rosales" class="profile-img">
+          <div class="profile-card">
+            <span class="status-dot"></span>
+            <p>Available for web, app, and system projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section-shell reveal">
+      <div class="about-intro">
+        <p class="section-kicker">About</p>
+        <h2>Developer with a builder mindset.</h2>
+        <p>
+          I am a passionate developer with experience in web development, mobile applications, and IoT systems. I enjoy building solutions that solve real-world problems and continuously learning modern technologies.
+        </p>
+      </div>
+
+      <div class="about-highlights" aria-label="About highlights">
+        <div class="about-card">
+          <span>01</span>
+          <h3>Web Development</h3>
+          <p>Responsive websites with clean structure and polished interfaces.</p>
+        </div>
+        <div class="about-card">
+          <span>02</span>
+          <h3>Mobile Apps</h3>
+          <p>React Native screens and app flows built around practical use cases.</p>
+        </div>
+        <div class="about-card">
+          <span>03</span>
+          <h3>IoT Systems</h3>
+          <p>Sensor-connected tools for monitoring, alerts, and real-time data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-shell reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Featured Project</p>
+        <h2>Selected work</h2>
+      </div>
+
+      <a href="project1.html" class="project-card-link" aria-label="Open full details for CrayTech Monitoring System">
+        <article class="project-card">
+          <div class="project-card-image">
+            <img src="images/CraytechPoster.png" alt="CrayTech Monitoring System poster">
+          </div>
+          <div class="project-card-content">
+            <span class="project-tag">Android / IoT / Firebase</span>
+            <h3>CrayTech Monitoring System</h3>
+            <p>
+              Real-time crayfish farm water-quality monitoring with mobile screens, cloud data, and IoT sensor support.
+            </p>
+            <div class="project-meta">
+              <span>React Native</span>
+              <span>Firebase</span>
+              <span>IoT Sensors</span>
+            </div>
+            <span class="project-card-cta">View full project</span>
+          </div>
+        </article>
+      </a>
+    </section>
+
+    <section id="skills" class="skills section-shell reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Skills</p>
+        <h2>Tools I use to build.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, responsive layouts, accessible UI structure.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Mobile</h3>
+          <p>React Native, Java, app screens, data-driven mobile experiences.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend & Data</h3>
+          <p>Firebase, MySQL, authentication, real-time data, project integration.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Systems</h3>
+          <p>IoT sensors, monitoring workflows, alerts, and practical dashboards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-shell reveal">
+      <div>
+        <p class="section-kicker">Contact</p>
+        <h2>Let us build something useful.</h2>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:rosalesmiguelbengero@gmail.com" class="button button-primary">rosalesmiguelbengero@gmail.com</a>
+        <a href="https://www.facebook.com/miguel.rosales.398117" target="_blank" rel="noreferrer" class="button button-secondary">Facebook Profile</a>
+        <a href="https://github.com/migilcloud" target="_blank" rel="noreferrer" class="button button-secondary">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Miguel Rosales. Designed and built with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
