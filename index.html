@@ -103,15 +103,15 @@
 
     <section id="projects" class="projects section-shell reveal">
       <div class="section-heading">
-        <p class="section-kicker">Featured Project</p>
+        <p class="section-kicker">Featured Projects</p>
         <h2>Selected work</h2>
       </div>
 
-      <a href="project1.html" class="project-card-link" aria-label="Open full details for CrayTech Monitoring System">
+      <div class="projects-grid">
         <article class="project-card">
-          <div class="project-card-image">
+          <a href="project1.html" class="project-card-image" aria-label="Open full details for CrayTech Monitoring System">
             <img src="images/CraytechPoster.png" alt="CrayTech Monitoring System poster">
-          </div>
+          </a>
           <div class="project-card-content">
             <span class="project-tag">Android / IoT / Firebase</span>
             <h3>CrayTech Monitoring System</h3>
@@ -123,10 +123,65 @@
               <span>Firebase</span>
               <span>IoT Sensors</span>
             </div>
-            <span class="project-card-cta">View full project</span>
+            <div class="project-actions">
+              <a href="project1.html" class="button button-primary compact-button">Case Study</a>
+              <a href="https://github.com/migilcloud/CrayTech" target="_blank" rel="noreferrer" class="button button-secondary compact-button">GitHub</a>
+            </div>
           </div>
         </article>
-      </a>
+
+        <article class="project-card">
+          <a href="project2.html" class="project-card-image task-card-preview" aria-label="Open full details for Task Management System">
+            <div class="task-preview" aria-hidden="true">
+              <div class="task-preview-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="task-preview-body">
+                <div class="task-sidebar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="task-board">
+                  <div>
+                    <strong>To Do</strong>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div>
+                    <strong>In Progress</strong>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div>
+                    <strong>Done</strong>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="project-card-content">
+            <span class="project-tag">Full Stack / Task Management / Vercel</span>
+            <h3>Task Management System</h3>
+            <p>
+              A full stack productivity system for organizing tasks, tracking progress, and managing work through a live web application.
+            </p>
+            <div class="project-meta">
+              <span>Full Stack</span>
+              <span>Web App</span>
+              <span>Task Workflow</span>
+            </div>
+            <div class="project-actions">
+              <a href="project2.html" class="button button-primary compact-button">Case Study</a>
+              <a href="https://task-management-system-bice-iota.vercel.app/" target="_blank" rel="noreferrer" class="button button-secondary compact-button">Live Website</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="skills" class="skills section-shell reveal">
