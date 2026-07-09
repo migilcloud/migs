@@ -5,173 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Task Management System case study by Miguel Rosales.">
   <title>Task Management System | Miguel Rosales</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="site-header">
-    <nav class="navbar project-navbar">
+    <nav class="navbar project-navbar" aria-label="Project navigation">
       <a href="index.html" class="brand">
         <span class="brand-mark">MR</span>
         <span>Miguel Rosales</span>
       </a>
-
-      <a
-        href="index.html#projects"
-        class="button button-secondary compact-button"
-      >
-        Back to Portfolio
-      </a>
+      <a href="index.html#projects" class="button button-secondary compact-button">Back to Portfolio</a>
     </nav>
   </header>
 
   <main>
-
     <section class="project-hero section-shell reveal">
-
       <div class="project-hero-copy">
         <p class="eyebrow">Featured Case Study</p>
-
         <h1>Task Management System</h1>
-
         <p>
-          A full stack web application that allows users to register,
-          log in securely, and manage personal tasks using a modern
-          React frontend, FastAPI backend, and MySQL database.
+          A full stack web application that allows users to register, log in securely, and manage personal tasks using a modern React frontend, FastAPI backend, and MySQL database.
         </p>
-
         <div class="hero-actions">
-
-          <a
-            href="https://task-management-system-bice-iota.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-            class="button button-primary"
-          >
-            Live Website
-          </a>
-
-          <a
-            href="https://github.com/migilcloud/TaskManagementSystem"
-            target="_blank"
-            rel="noreferrer"
-            class="button button-secondary"
-          >
-            GitHub
-          </a>
-
+          <a href="https://task-management-system-bice-iota.vercel.app/" target="_blank" rel="noreferrer" class="button button-primary">Live Website</a>
+          <a href="https://github.com/migilcloud/TaskManagementSystem" target="_blank" rel="noreferrer" class="button button-secondary">GitHub</a>
         </div>
       </div>
-
       <div class="project-hero-image">
-
-        <img
-          src="images/tms1.png"
-          alt="Task Management System Dashboard"
-          class="hero-shot"
-        >
-
-        <img
-          src="images/tms2.png"
-          alt="Task Management System Tasks"
-          class="hero-shot"
-        >
-
+        <img src="images/tms1.png" alt="Task Management System Dashboard" class="hero-shot">
+        <img src="images/tms2.png" alt="Task Management System Tasks" class="hero-shot">
       </div>
-
     </section>
 
     <section class="case-summary section-shell reveal">
-
       <div class="summary-item">
         <span>Role</span>
         <strong>Full Stack Developer</strong>
       </div>
-
       <div class="summary-item">
         <span>Frontend</span>
         <strong>React</strong>
       </div>
-
       <div class="summary-item">
         <span>Backend</span>
         <strong>FastAPI</strong>
       </div>
-
       <div class="summary-item">
         <span>Database</span>
         <strong>MySQL</strong>
       </div>
-
     </section>
 
     <section class="case-content section-shell reveal">
-
       <div class="case-section">
         <p class="section-kicker">Overview</p>
-
         <h2>Managing tasks through a modern full stack application.</h2>
-
         <p>
-        The Task Management System is a full stack productivity application
-        that enables users to securely manage their personal tasks through
-        authentication, database persistence, and cloud-hosted services.
-        The project demonstrates frontend development, backend API design,
-        database management, and modern deployment workflows.
+          The Task Management System is a full stack productivity application that enables users to securely manage their personal tasks through authentication, database persistence, and cloud-hosted services. The project demonstrates frontend development, backend API design, database management, and modern deployment workflows.
         </p>
       </div>
 
       <div class="case-grid">
-
         <div class="case-card">
           <h3>Problem</h3>
-
-          <p>
-            Users need a simple way to organize tasks, monitor progress,
-            and manage work efficiently.
-          </p>
+          <p>Users need a simple way to organize tasks, monitor progress, and manage work efficiently.</p>
         </div>
-
         <div class="case-card">
           <h3>Solution</h3>
-
-          <p>
-            Developed a secure task management system with authentication,
-            task creation, updates, deletion, and database storage.
-          </p>
+          <p>Developed a secure task management system with authentication, task creation, updates, deletion, and database storage.</p>
         </div>
-
         <div class="case-card">
           <h3>Outcome</h3>
-
-          <p>
-            Successfully deployed a complete full stack web application
-            using modern development and cloud deployment tools.
-          </p>
+          <p>Successfully deployed a complete full stack web application using modern development and cloud deployment tools.</p>
         </div>
-
       </div>
-
     </section>
 
     <section class="tech-section section-shell reveal">
-
       <div class="section-heading">
         <p class="section-kicker">Technology</p>
         <h2>Tools Used</h2>
       </div>
-
       <div class="tech-list">
-
         <span>React</span>
         <span>FastAPI</span>
         <span>MySQL</span>
@@ -180,77 +98,50 @@
         <span>Vercel</span>
         <span>REST API</span>
         <span>Axios</span>
-
       </div>
-
     </section>
 
     <section class="case-content section-shell reveal">
+      <div class="case-section">
+        <p class="section-kicker">Features</p>
+        <h2>Key functionality</h2>
+      </div>
 
-        <div class="case-section">
-            <p class="section-kicker">Features</p>
-
-            <h2>Key functionality</h2>
+      <div class="case-grid">
+        <div class="case-card">
+          <h3>User Authentication</h3>
+          <p>Secure registration and login system using JWT authentication.</p>
         </div>
-
-        <div class="case-grid">
-
-            <div class="case-card">
-            <h3>User Authentication</h3>
-
-            <p>
-                Secure registration and login system using JWT authentication.
-            </p>
-            </div>
-
-            <div class="case-card">
-            <h3>Task Management</h3>
-
-            <p>
-                Create, update, complete, and delete tasks through an intuitive interface.
-            </p>
-            </div>
-
-            <div class="case-card">
-            <h3>Database Integration</h3>
-
-            <p>
-                Tasks and user accounts are stored in a MySQL database hosted on Railway.
-            </p>
-            </div>
-
+        <div class="case-card">
+          <h3>Task Management</h3>
+          <p>Create, update, complete, and delete tasks through an intuitive interface.</p>
         </div>
+        <div class="case-card">
+          <h3>Database Integration</h3>
+          <p>Tasks and user accounts are stored in a MySQL database hosted on Railway.</p>
+        </div>
+      </div>
+    </section>
 
-        </section>
-
-                    <section class="tech-section section-shell reveal">
-
-            <div class="section-heading">
-                <p class="section-kicker">Deployment</p>
-                <h2>Cloud Infrastructure</h2>
-            </div>
-
-            <div class="tech-list">
-
-                <span>Frontend - Vercel</span>
-                <span>Backend - Railway</span>
-                <span>Database - Railway MySQL</span>
-                <span>JWT Authentication</span>
-                <span>REST API</span>
-
-            </div>
-
-            </section>
-
+    <section class="tech-section section-shell reveal">
+      <div class="section-heading">
+        <p class="section-kicker">Deployment</p>
+        <h2>Cloud Infrastructure</h2>
+      </div>
+      <div class="tech-list">
+        <span>Frontend - Vercel</span>
+        <span>Backend - Railway</span>
+        <span>Database - Railway MySQL</span>
+        <span>JWT Authentication</span>
+        <span>REST API</span>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>
-      © 2026 Miguel Rosales. Task Management System case study.
-    </p>
+    <p>© 2026 Miguel Rosales. Task Management System case study.</p>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>

@@ -390,11 +390,10 @@ h3 {
   margin-bottom: 32px;
 }
 
-.project-card-link {
-  color: inherit;
-  display: block;
-  max-width: 760px;
-  text-decoration: none;
+.projects-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .project-card {
@@ -407,23 +406,18 @@ h3 {
   transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
-.project-card-link:hover .project-card,
-.project-card-link:focus-visible .project-card {
+.project-card:hover {
   border-color: rgba(18, 107, 95, 0.45);
   box-shadow: var(--shadow);
   transform: translateY(-6px);
 }
 
-.project-card-link:focus-visible {
-  border-radius: var(--radius);
-  outline: 3px solid rgba(217, 101, 69, 0.38);
-  outline-offset: 6px;
-}
-
 .project-card-image {
   background: var(--surface-strong);
+  display: block;
   min-height: 300px;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .project-card-image img {
@@ -434,9 +428,14 @@ h3 {
   width: 100%;
 }
 
-.project-card-link:hover img,
-.project-card-link:focus-visible img {
+.project-card-image:hover img,
+.project-card-image:focus-visible img {
   transform: scale(1.03);
+}
+
+.project-card-image:focus-visible {
+  outline: 3px solid rgba(217, 101, 69, 0.38);
+  outline-offset: -3px;
 }
 
 .project-card-content {
@@ -462,6 +461,13 @@ h3 {
   margin-top: 24px;
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
 .project-meta span,
 .tech-list span {
   background: var(--surface-strong);
@@ -471,23 +477,6 @@ h3 {
   font-size: 0.9rem;
   font-weight: 800;
   padding: 9px 12px;
-}
-
-.text-link {
-  color: var(--primary);
-  font-weight: 800;
-  margin-top: 28px;
-  text-decoration: none;
-}
-
-.text-link:hover {
-  color: var(--accent);
-}
-
-.project-card-cta {
-  color: var(--primary);
-  font-weight: 800;
-  margin-top: 26px;
 }
 
 .skills-grid {
@@ -567,9 +556,10 @@ h3 {
   gap: 1rem;
 }
 
-.project-hero-image img {
+.project-hero-image img,
+.hero-shot {
+  border-radius: var(--radius);
   width: 100%;
-  border-radius: 16px;
 }
 
 .case-summary {
@@ -623,27 +613,9 @@ h3 {
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-.device-section {
-  margin-top: 4rem;
-}
-
-.device-preview {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 16px 40px rgba(23,33,31,.08);
-}
-
-.device-preview img {
-  width: 100%;
-  display: block;
-  object-fit: contain;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .device-showcase {
@@ -665,7 +637,7 @@ h3 {
   height: auto;
 }
 
-.gallery-grid figure:not(.featured-image) img {
+.gallery-grid figure img {
   aspect-ratio: 9 / 16;
   height: 100%;
   object-fit: cover;
@@ -780,10 +752,6 @@ h3 {
   .case-grid,
   .gallery-grid {
     grid-template-columns: 1fr;
-  }
-
-  .project-card-link {
-    max-width: none;
   }
 
   .project-card-image {
